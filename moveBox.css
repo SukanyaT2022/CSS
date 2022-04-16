@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* start for remove margin for the whole page*/
+
+
+.nav-bar{
+    background-color:beige;
+    width: 100%;
+    display: flex; /*put display flex to nav bar so logo 
+    and home contact are on the same line*/
+   /*do not give height*/
+   justify-content: space-between;
+   /* space bet is to separate logo and home bar make space bet*/
+ 
+}
+.nav-bar ul { 
+display: flex;
+justify-content: end;
+align-items: center;/*center but vertical*/
+padding-right: 150px; /*padding from justify contect center 200px*/
+list-style: none; /*move dot out*/ 
+
+/* text-decoration:none; to move underline out
+display flex help to put all text home contacts to be same line*/
+
+}
+/*make it line up use display flex 
+coz diaplay flex work only parent --ul is parents*/
+
+.nav-bar li{
+padding: 20px 20px;
+background-color: pink;
+
+}
+
+
+/*logo*/
+.logo{
+height: 80px;
+width: 80px;
+border-radius: 50%;
+padding: 20px 20px;
+
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+/*mainbox*/
+.parents{
+height: 500px;
+background-color:aqua;
+padding-top: 100px;
+
+
+
+}
+.child1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*if want  two or more item to be center use flex-direction:column;*/
+
+    height: 100px;
+    width: 30%;
+    background-color: lightgreen;
+    margin: auto;/*move box to center*/
+
+
+}
+
+.child1 h2{
+text-align:center;
+padding-top: 30px;
+}
+
+
+
+#click{
+    height: 50px;
+    width: 100px;
+    background-color: blueviolet;
+display: block;
+margin: 30px auto;
+
+}
+/*id use #*/
+/* move click me to center-
+button is in line element so chnage to block element
+-use display block
+and  align item center
+
